@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" href="../../img/usa.gif" type="image/gif" sizes="16x16">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,7 +18,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top nadpis">
+
+    <!--SCROLL-->
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+    <!--NAVBAR + HEADER-->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary nadpis">
         <a class="navbar-brand" href="../../index.html">🠔</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -41,6 +50,9 @@
         <h1 class="display-4 p-0 nadpis">Alabama</h1>
     </header>
     <main class="container">
+
+        <!--TEXT-->
+
         <div class="col">
             <div class="col-xs-12 col-sm-12 col-lg-12">
                 <p class="p-2">Alabama je stát nacházející se na
@@ -141,6 +153,9 @@
             </div>
         </div>
     </main>
+
+    <!--FOOTER-->
+
     <footer class="container-fluid bg-primary mt-4 p-4">
         <div class="col-sm12 text-center">
             <div class="wrapper p-1">
@@ -177,6 +192,9 @@
             </div>
             </p>
         </div>
+
+        <!--AUTOR-->
+
         <div class="text-center mt-2">
             <button class="btn text-white btn-primary autor" data-toggle="collapse" data-target="#demo">Autor</button>
             <span class="text-white autor">
@@ -195,6 +213,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }</script>
+    <script src="../../muj.js"></script>
 </body>
 
 </html>

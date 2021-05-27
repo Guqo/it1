@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 .autor {
   font-family: 'Raleway', sans-serif;
 }
@@ -13,6 +14,14 @@
   height: auto;
 }
 
+.dlouhe {
+  width: 40%;
+}
+
+header {
+  position: relative;
+}
+
 main {
   width: 100%;
   margin: 0 auto;
@@ -24,6 +33,7 @@ main {
 }
 
 .gallery img {
+  filter: grayscale(85%);
   transition: 0.5s;
   padding: 15px;
   width: 300px;
@@ -34,8 +44,12 @@ main {
 }
 
 .gallery img:hover {
-  filter:grayscale(100%);
+  filter: none;
   transform: scale(1.05);
+}
+
+.kurzor {
+  cursor: pointer;
 }
 
 .nozka {
@@ -136,4 +150,101 @@ main {
 
 .wrapper .youtube:hover span, .wrapper .youtube:hover .tooltip, .wrapper .youtube:hover .tooltip:before {
   background: #DE463B;
+}
+
+h5 {
+  width: 25%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  ;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressBar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+
+#progressBar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+
+.intro {
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  transition: 1s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.logo.active {
+  bottom: 0px;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
 }
