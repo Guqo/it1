@@ -25,30 +25,33 @@
     <div id="scrollPath"></div>
 
     <!--NAVBAR + HEADER-->
-
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top nadpis">
-        <a class="navbar-brand" href="../../index.html">🠔</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://cs.wikipedia.org/wiki/Connecticut" target="_blank">Wikipedia</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Connecticut</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="index.html">Informace</a>
-                        <a class="dropdown-item" href="galerie.html">Galerie</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header class="container-jumbotron p-3 text-center bg-primary text-white">
-        <h1 class="display-4 p-0 nadpis">Connecticut</h1>
-    </header>
+    <div class="gradient">
+        <nav class="navbar navbar-expand-sm navbar-dark nadpis">
+            <a class="navbar-brand" href="../../index.html">🠔</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://cs.wikipedia.org/wiki/Connecticut"
+                            target="_blank">Wikipedia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Connecticut</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="index.html">Informace</a>
+                            <a class="dropdown-item" href="galerie.html">Galerie</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="container-jumbotron p-3 text-center text-white">
+            <h1 class="display-4 p-0 nadpis">Connecticut</h1>
+        </header>
+    </div>
     <main class="container">
 
         <!--TEXT-->
@@ -171,7 +174,7 @@
 
     <!--FOOTER-->
 
-    <footer class="container-fluid bg-primary mt-4 p-4">
+    <footer class="container-fluid gradient mt-4 p-4">
         <div class="col-sm12 text-center">
             <div class="wrapper p-1">
                 <div class="icon facebook">
@@ -211,7 +214,7 @@
         <!--AUTOR-->
 
         <div class="text-center mt-2">
-            <button class="btn text-white btn-primary autor" data-toggle="collapse" data-target="#demo">Autor</button>
+            <button class="btn text-white btn-gradient autor" data-toggle="collapse" data-target="#demo">Autor</button>
             <span class="text-white autor">
                 <div id="demo" class="collapse">Tomáš Ryba IT1</div>
             </span>
