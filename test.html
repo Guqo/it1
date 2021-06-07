@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Kvíz">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/…css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/…css" />
-    <link rel="icon" href=" img/usa.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" href="img/usa.gif" type="image/gif" sizes="16x16">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/…css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -44,44 +44,149 @@
         <div class="col">
             <div class="col-xs-12 col-sm-12 col-lg-12">
                 <section>
-                    <p class="alert alert-info otazka mt-3">1. Výjmenuj 5 nejmladších prezidentů USA.</p>
+                    <p class="alert alert-gradient2 otazka mt-3 text-white">1. Zaškrtni prezidenty USA.
+                    </p>
                     <div class="form-group row">
-                        <label for="prezident" class="col-md-1 col-form-label">Prezidenti:</label>
-                        <div class="col-md-11">
-                            <textarea class="form-control" name="prezident" id="prezident" rows="3"></textarea>
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox" value="Joe Biden,">Barack
+                                Obama
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox" value="Joe Biden,">Antony
+                                Blinken
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox" value="Joe Biden,">George
+                                Bush
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox" value="Joe Biden,">Bill
+                                Clinton
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox" value="Joe Biden,">Lloyd
+                                Austin
+                            </div>
                         </div>
+                        <p class="alert alert-success answer collapse multi-collapse mt-2 ml-3" id="answer1">Barack
+                            Obama,
+                            George Bush, Bill Clinton
+                        </p>
                     </div>
                 </section>
                 <hr>
                 <section>
-                    <p class="alert alert-info otazka mt-3">2. Ve kterém státu se nachází Bílý dům</p>
+                    <p class="alert alert-gradient2 otazka mt-3 text-white">2. Ve kde se nachází Bílý dům.</p>
                     <div class="form-group row">
-                        <label for="bitva" class="col-md-3 col-form-label">Bílý dům:</label>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="white_house" id="new_york"
-                                    value="checkedValue"> New York
-                            </label>
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="white_house" id="new_york"
+                                        value="checkedValue"> New York
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="white_house" id="hawaii"
+                                        value="checkedValue"> Hawaii
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="white_house" id="washington"
+                                        value="checkedValue"> Washington D.C.
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="white_house" id="nevada"
+                                        value="checkedValue"> Nevada
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="white_house" id="hawaii"
-                                    value="checkedValue"> Hawaii
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="white_house" id="washington"
-                                    value="checkedValue"> Washington
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="white_house" id="nevada"
-                                    value="checkedValue"> Nevada
-                            </label>
-                        </div>
+                        <p class="alert alert-success answer collapse multi-collapse mt-2 ml-3" id="answer2">Washington
+                            D.C.
+                        </p>
                 </section>
+                <hr>
+                <section>
+                    <p class="alert alert-gradient2 otazka mt-3 text-white">3. Vyber hlavní město Texasu.</p>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <select class="form-control" id="texas">
+                                <option value="nic" selected hidden>Vyber hl. město</option>
+                                <option value="Dallas">Dallas</option>
+                                <option value="Houston">Houston</option>
+                                <option value="Austin">Austin</option>
+                            </select>
+                        </div>
+                        <p class="alert alert-success answer collapse multi-collapse mt-2 ml-3" id="answer3">Austin
+                        </p>
+                    </div>
+                </section>
+
+                <hr>
+                <section>
+                    <p class="alert alert-gradient2 otazka mt-3 text-white">4. Vysvětli co znamejí hvězdy a pruhy na
+                        vlajce
+                        USA.</p>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="hvezdy,pruhy" id="hvezdy,pruhy" rows="1"
+                                placeholder="Symboly"></textarea>
+                        </div>
+                        <p class="alert alert-success answer collapse multi-collapse mt-2 ml-3" id="answer4">Vlajka má
+                            třináct vodorovných pruhů (sedm červených a šest bílých) a modrý kanton (o šířce sedmi
+                            pruhů), ve kterém je umístěno padesát bílých pěticípých hvězd v devíti řadách (střídavě po
+                            pěti a šesti hvězdách). Pruhy představují třináct původních, zakládajících států Unie,
+                            hvězdy současný počet států Unie.
+                        </p>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <p class="alert alert-gradient2 otazka mt-3 text-white">5. Měna v USA.</p>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="mena" id="$"
+                                        value="checkedValue">
+                                    Americký dolar
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="mena" id="Ł"
+                                        value="checkedValue">
+                                    Britská libra
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="mena" id="€"
+                                        value="checkedValue">
+                                    Euro
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="mena" id="czk"
+                                        value="checkedValue">
+                                    Koruna česká
+                                </label>
+                            </div>
+                        </div>
+                        <p class="alert alert-success answer collapse multi-collapse mt-2 ml-3" id="answer5">Americký
+                            dolar - $
+                        </p>
+                </section>
+                <div class="container-wrap">
+                    <button type="button" class="btn gradient text-white mt-4" data-toggle="collapse"
+                        data-target=".multi-collapse" aria-expanded="false"
+                        aria-controls="answer1 answer2 answer3 answer4 answer5">Odpovědi</button>
+                </div>
             </div>
         </div>
         </div>
@@ -137,13 +242,13 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/….js"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/….js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/….js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
